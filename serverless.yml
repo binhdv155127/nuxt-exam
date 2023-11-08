@@ -1,0 +1,18 @@
+service: nuxt-exam-lambda-ssr-nuxt3
+frameworkVersion: "3"
+provider:
+  name: aws
+  stage: dev
+  region: ap-northeast-1
+  profile: default
+
+package:
+  patterns:
+    - "!**"
+    - ".output/server/**"
+
+functions:
+  NuxtSsrCore:
+    runtime: nodejs18.x
+    handler: ".output/server/index.handler"
+    url: true
