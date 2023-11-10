@@ -6,5 +6,6 @@
    <!-- <img src="~/assets/0516.png" alt="" style="width: 200px;"> -->
    <div>thêm dòng</div>
    <div>tesst</div>
+   <div>tesst code build</div>
   </div>
 </template>
