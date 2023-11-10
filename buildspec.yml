@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+    commands:
+      - echo install package
+      - npm install
+      - echo update package
+      - npm update
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Nuxt Project Building...
+      - npm run build
+      - echo Build completed on `date`
+  post_build:
+    commands:
+      - echo "Updating to S3 bucket"
+      - aws s3 sync .output/public s3://nuxt-example-01 --delete
