@@ -174,7 +174,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/nuxt-exam-lambda-ssr-nuxt3/dev/1699356243246-2023-11-07T11:24:03.246Z/nuxt-exam-lambda-ssr-nuxt3.zip"
+                "S3Key": "serverless/nuxt-exam-lambda-ssr-nuxt3/dev/1699440870217-2023-11-08T10:54:30.217Z/nuxt-exam-lambda-ssr-nuxt3.zip"
               },
               "Handler": ".output/server/index.handler",
               "Runtime": "nodejs18.x",
@@ -192,14 +192,14 @@
               "NuxtSsrCoreLogGroup"
             ]
           },
-          "NuxtSsrCoreLambdaVersionJojC9oLOQalOhwEI2BnV9C2W9ef2Pyivgl0vxQT38": {
+          "NuxtSsrCoreLambdaVersionZw4ZLv1OufniqKppEJi4CIRsypA9baN906MdlhaRtuQ": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "NuxtSsrCoreLambdaFunction"
               },
-              "CodeSha256": "V1HesnNLgczdd/ZH4cjP5U51Vi3+PM5se4yHa7tAQLA="
+              "CodeSha256": "9mrzqVGNHfeKyOnh/jkRXbCF1NQRpyQvQd/VNTCzQgg="
             }
           },
           "NuxtSsrCoreLambdaFunctionUrl": {
@@ -238,7 +238,7 @@
           "NuxtSsrCoreLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "NuxtSsrCoreLambdaVersionJojC9oLOQalOhwEI2BnV9C2W9ef2Pyivgl0vxQT38"
+              "Ref": "NuxtSsrCoreLambdaVersionZw4ZLv1OufniqKppEJi4CIRsypA9baN906MdlhaRtuQ"
             },
             "Export": {
               "Name": "sls-nuxt-exam-lambda-ssr-nuxt3-dev-NuxtSsrCoreLambdaFunctionQualifiedArn"
@@ -354,7 +354,7 @@
         "memory": 1024,
         "timeout": 6,
         "vpc": {},
-        "versionLogicalId": "NuxtSsrCoreLambdaVersionJojC9oLOQalOhwEI2BnV9C2W9ef2Pyivgl0vxQT38"
+        "versionLogicalId": "NuxtSsrCoreLambdaVersionZw4ZLv1OufniqKppEJi4CIRsypA9baN906MdlhaRtuQ"
       }
     },
     "configValidationMode": "warn",
@@ -372,7 +372,7 @@
         ],
         "artifactsS3KeyDirname": "serverless/nuxt-exam-lambda-ssr-nuxt3/dev/code-artifacts",
         "artifact": "C:\\Users\\BinhDuongVan\\Desktop\\nuxt-exam\\.serverless\\nuxt-exam-lambda-ssr-nuxt3.zip",
-        "artifactDirectoryName": "serverless/nuxt-exam-lambda-ssr-nuxt3/dev/1699356243246-2023-11-07T11:24:03.246Z"
+        "artifactDirectoryName": "serverless/nuxt-exam-lambda-ssr-nuxt3/dev/1699440870217-2023-11-08T10:54:30.217Z"
       },
       "functions": {
         "$ref": "$[\"service\"][\"functions\"]"
@@ -383,7 +383,7 @@
     "artifact": "C:\\Users\\BinhDuongVan\\Desktop\\nuxt-exam\\.serverless\\nuxt-exam-lambda-ssr-nuxt3.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/nuxt-exam-lambda-ssr-nuxt3/dev/1699356243246-2023-11-07T11:24:03.246Z",
+    "artifactDirectoryName": "serverless/nuxt-exam-lambda-ssr-nuxt3/dev/1699440870217-2023-11-08T10:54:30.217Z",
     "artifact": "nuxt-exam-lambda-ssr-nuxt3.zip"
   }
 }
