@@ -162,7 +162,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/nuxt-exam-lambda-ssr-nuxt3/dev/1699440870217-2023-11-08T10:54:30.217Z/nuxt-exam-lambda-ssr-nuxt3.zip"
+          "S3Key": "serverless/nuxt-exam-lambda-ssr-nuxt3/dev/1699952438111-2023-11-14T09:00:38.111Z/nuxt-exam-lambda-ssr-nuxt3.zip"
         },
         "Handler": ".output/server/index.handler",
         "Runtime": "nodejs18.x",
@@ -180,14 +180,14 @@
         "NuxtSsrCoreLogGroup"
       ]
     },
-    "NuxtSsrCoreLambdaVersionZw4ZLv1OufniqKppEJi4CIRsypA9baN906MdlhaRtuQ": {
+    "NuxtSsrCoreLambdaVersionf3qWyNnDtJ1vJg4qtN3RGfLnWpvlM4EhFPnyk7o": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "NuxtSsrCoreLambdaFunction"
         },
-        "CodeSha256": "9mrzqVGNHfeKyOnh/jkRXbCF1NQRpyQvQd/VNTCzQgg="
+        "CodeSha256": "kSAQ2Lcyvp3MD4wcZDWyWP4Cq8Ief99COM1qp4zGC38="
       }
     },
     "NuxtSsrCoreLambdaFunctionUrl": {
@@ -229,7 +229,7 @@
     "NuxtSsrCoreLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "NuxtSsrCoreLambdaVersionZw4ZLv1OufniqKppEJi4CIRsypA9baN906MdlhaRtuQ"
+        "Ref": "NuxtSsrCoreLambdaVersionf3qWyNnDtJ1vJg4qtN3RGfLnWpvlM4EhFPnyk7o"
       },
       "Export": {
         "Name": "sls-nuxt-exam-lambda-ssr-nuxt3-dev-NuxtSsrCoreLambdaFunctionQualifiedArn"
