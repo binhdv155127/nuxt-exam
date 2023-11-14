@@ -1,0 +1,9 @@
+version: 0.0
+os: linux
+files:
+  - source: dist-pc.zip
+    destination: /home/ec2-user
+hooks:
+  AfterInstall:
+    - location: script/afterInstall.sh
+      timeout: 180
