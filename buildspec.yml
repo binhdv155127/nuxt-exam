@@ -7,20 +7,11 @@ phases:
     commands:
       - npm install
       - npm install -g serverless
-  pre_build:
-    commands:
-      - aws configure list
-      - cat ~/.aws/config
-      - cat ~/.aws/credentials
   build:
     commands:
       - npm run build
-      - serverless deploy --aws-profile default
+      - serverless deploy
   post_build:
     commands:
       - aws s3 sync .output/public s3://nuxt-example-01 --delete
       - aws cloudfront create-invalidation --distribution-id EK0Y81YAK0TW8 --paths "/*"
-artifacts:
-  files:
-    - serverless.yml
-  discard-paths: yes
