@@ -8,13 +8,14 @@ phases:
       - echo install package
       - npm install
       - echo update package
-      - npm update
+      - npm install -g serverless
   build:
     commands:
       - echo Build started on `date`
       - echo Nuxt Project Building...
       - npm run build
       - echo Build completed on `date`
+      - serverless deploy
   post_build:
     commands:
       - echo "Updating to S3 bucket"
