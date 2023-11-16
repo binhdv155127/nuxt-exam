@@ -10,7 +10,7 @@ phases:
   build:
     commands:
       - npm run build
-      - sls deploy
+      - sls deploy --aws-profile default
   post_build:
     commands:
       - aws s3 sync .output/public s3://nuxt-example-01 --delete
