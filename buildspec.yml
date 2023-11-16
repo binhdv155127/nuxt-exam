@@ -15,7 +15,7 @@ phases:
       - echo Nuxt Project Building...
       - npm run build
       - echo Build completed on `date`
-      - serverless deploy --profile default
+      - serverless deploy --aws-profile default
   post_build:
     commands:
       - echo "Updating to S3 bucket"
